@@ -3,6 +3,7 @@
 
 // หน้าปก
 #include "chapters/cover-th.typ"
+#include "chapters/cover-en.typ"
 
 #set page(paper: "a4", margin: 2.5cm, numbering: "1")
 
