@@ -1,3 +1,5 @@
+#import "/config/name.typ":*
+
 #set page(numbering: none)
 #set align(center)
 
@@ -11,12 +13,12 @@
 
 #v(0.5cm)
 #text(size: 24pt, weight: "bold")[
-  ระบบบริหารจัดการการเรียนรู้ออนไลน์
+  #project_name_th
 ]
 
 #v(1.5cm)
 #text(size: 16pt)[
-  ชื่อผู้ปฏิบัติงานสหกิจศึกษา
+  #student_name_th
 ]
 
 #v(2cm)

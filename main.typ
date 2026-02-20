@@ -24,7 +24,7 @@
 #show heading.where(level: 1): it => {
   set align(center)
   set text(size: 18pt)
-  set strong(delta: 500)
+  set text(weight: "bold")
   it
 }
 #show heading.where(level: 2): it => {

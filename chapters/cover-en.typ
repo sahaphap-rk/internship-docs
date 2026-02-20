@@ -1,3 +1,5 @@
+#import "../config/name.typ" : *
+
 #set page(numbering: none)
 #set align(center)
 
@@ -11,12 +13,12 @@
 
 #v(0.5cm)
 #text(size: 24pt, weight: "bold")[
-  E-Learning Management System
+  #project_name_en
 ]
 
 #v(1.5cm)
 #text(size: 16pt)[
-  Student Name
+  #student_name_en
 ]
 
 #v(2cm)
