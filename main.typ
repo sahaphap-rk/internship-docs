@@ -1,12 +1,11 @@
 // ตั้งค่า Font และกระดาษ
-#set text(font: "TH Sarabun New", size: 16pt, lang: "th")
+#set text(font: "TH Sarabun New", size: 16pt, lang: "th", style: "normal", weight: "regular")
 #set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 3cm, right: 2.5cm))
 
 // ตั้งค่าการย่อหน้า (Indentation) และการจัดการพารากราฟ
 #set par(
   first-line-indent: 1cm,  // กำหนดระยะย่อหน้า 1 ซม. (ประมาณ 1 Tab)
   justify: true,
-  spacing: 1em,
   leading: 0.65em,         // ระยะห่างระหว่างบรรทัดในพารากราฟ
 )
 
@@ -14,22 +13,30 @@
 // หมายเหตุ: หากพารากราฟยาวมากเกินกว่าหนึ่งหน้า จะทำให้เกิดปัญหากระดาษว่าง
 #show par: set block(breakable: false)
 
-// บังคับให้ย่อหน้าในพารากราฟแรกหลังหัวข้อด้วย
+// บังคับให้ย่อหน้าในพารากราฟแรกหลังหัวข้อด้วย — ลดช่องว่างแนวตั้งลง
 #show heading: it => {
   it
-  par(text(size: 0pt, ""))
+  par(spacing: 0em, leading: 0em, text(size: 0pt, ""))
+  v(-0.8em)
 }
 
 // การตั้งค่าหัวข้อ
 #show heading.where(level: 1): it => {
   set align(center)
-  set text(size: 18pt)
-  set text(weight: "bold")
+  set text(size: 18pt, weight: "bold")
   it
+  v(1em)
 }
+
 #show heading.where(level: 2): it => {
   set text(size: 16pt)
   it
+}
+
+#show heading.where(level: 3): it => {
+  set text(size: 16pt)
+  it
+
 }
 
 // การจัดการลิสต์ให้ไม่มีการย่อหน้าแบบพารากราฟ
