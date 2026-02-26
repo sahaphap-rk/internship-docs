@@ -1,4 +1,4 @@
-#import "/config/name.typ" : student_name_th
+#import "/config/common.typ": student_name_th
 
 = *กิตติกรรมประกาศ*
 

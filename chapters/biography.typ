@@ -1,5 +1,4 @@
-#import "../config/name.typ" : student_name_th
-#import "../config/bio.typ" : *
+#import "../config/common.typ": *
 
 = *ประวัติย่อของผู้จัดทำ*
 

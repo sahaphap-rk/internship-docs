@@ -1,4 +1,4 @@
-#import "/config/name.typ":*
+#import "/config/common.typ": *
 
 #set page(numbering: none)
 #set align(center)

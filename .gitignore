@@ -11,4 +11,5 @@
 Thumbs.db
 
 .temp
-config/bio.typ
+
+config/common.typ

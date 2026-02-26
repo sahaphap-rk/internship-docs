@@ -6,6 +6,10 @@
 - ติดตั้ง VScode Extension [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist)
 - ติดตั้ง [Typst](https://typst.app/open-source/)
 
+## Config
+
+- `config/common.typ` ใช้เก็บข้อมูลที่ต้องใช้ร่วมกัน
+
 ## Development
 
 สำหรับตอนพัฒนา ใช้คำสั่ง
