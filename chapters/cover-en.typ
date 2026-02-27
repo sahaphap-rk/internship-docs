@@ -3,10 +3,10 @@
 #set page(numbering: none)
 #set align(center)
 
-#v(1fr)
+
 #image("/images/buu-logo-inter.webp", width: 20%)
 
-#let t(weight: "bold", body) = text(size: 18pt, weight: weight, body)
+#let t(weight: "bold", body) = text(size: 18pt, weight: weight, upper(body))
 
 #v(1cm)
 #t[
