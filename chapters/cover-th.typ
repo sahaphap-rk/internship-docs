@@ -4,32 +4,34 @@
 #set align(center)
 
 #v(1fr)
-#image("/images/buu-logo-inter.png", width: 20%)
+#image("/images/buu-logo-inter.png", width: 25%)
+
+#let t(weight: "bold", body) = text(size: 18pt, weight: weight, body)
 
 #v(1cm)
-#text(size: 18pt, weight: "bold")[
+#t[
   รายงานการปฏิบัติงานสหกิจศึกษา
 ]
 
 #v(0.5cm)
-#text(size: 24pt, weight: "bold")[
+#t[
   #project_name_th
 ]
 
 #v(1.5cm)
-#text(size: 16pt)[
+#t[
   #student_name_th
 ]
 
 #v(2cm)
-#text(size: 14pt)[
+#t[
   ปฏิบัติงาน ณ \
   บริษัท มายออเดอร์ อินเทลลิเจนซ์ จำกัด \
   211 2 ตำบล บางพระ อำเภอศรีราชา ชลบุรี 20110
 ]
 
 #v(2cm)
-#text(size: 12pt)[
+#t[
   รายงานนี้เป็นส่วนหนึ่งของวิชาสหกิจศึกษาหลักสูตรปริญญาวิทยาศาสตรบัณฑิต \
   สาขาวิชาวิทยาการคอมพิวเตอร์ \
   คณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา \
