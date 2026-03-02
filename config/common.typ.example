@@ -8,3 +8,5 @@
 #let current_address = ""
 #let education_s_history = ""
 #let education_s_year = ""
+#let company_name = ""
+#let company_name_en = "

@@ -26,7 +26,7 @@
 #v(2cm)
 #t[
   Internship at \
-  MyOrder Intelligence Co., Ltd. \
+  #company_name_en \
   211 2 Bang Phra, Si Racha, Chonburi 20110
 ]
 

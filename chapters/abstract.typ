@@ -14,7 +14,7 @@
 
 = บทคัดย่อ
 
-รายงานการปฏิบัติงานสหกิจศึกษาฉบับนี้ได้อธิบายถึงการปฏิบัติงาน ณ บริษัท มายออเดอร์ อินเทลลิเจนซ์ จำกัด ระหว่างวันที่ 13 พฤศจิกายน 2567 ถึงวันที่ 13 มีนาคม 2568 โดยปฏิบัติงานเกี่ยวกับการพัฒนาและแก้ไขระบบตามที่ได้รับมอบหมาย ซึ่งได้จัดทำการพัฒนาส่วนติดต่อผู้ใช้งานและส่วนหลังบ้านของระบบ (ชื่อระบบ) โดยแบ่งเป็นทั้งหมด (x) ฟีเจอร์ ได้แก่ …
+รายงานการปฏิบัติงานสหกิจศึกษาฉบับนี้ได้อธิบายถึงการปฏิบัติงาน ณ #company_name ระหว่างวันที่ 13 พฤศจิกายน 2567 ถึงวันที่ 13 มีนาคม 2568 โดยปฏิบัติงานเกี่ยวกับการพัฒนาและแก้ไขระบบตามที่ได้รับมอบหมาย ซึ่งได้จัดทำการพัฒนาส่วนติดต่อผู้ใช้งานและส่วนหลังบ้านของระบบ (ชื่อระบบ) โดยแบ่งเป็นทั้งหมด (x) ฟีเจอร์ ได้แก่ …
 
 โดย Framework ที่ใช้ในการพัฒนาระบบได้แก่ Angular, Tailwind CSS และ NestJS
 โดยใช้ภาษา HTML, CSS, TypeScript และ SQL ในการพัฒนาระบบ
@@ -35,6 +35,6 @@
 
 = ABSTRACT
 
-This report describes the internship at MyOrder Intelligence Co., Ltd. from November 13, 2024, to March 13, 2025. The internship involved developing and maintaining systems as assigned. The work included developing the frontend and backend of the (System Name) system, comprising (x) features such as...
+This report describes the internship at #company_name_en from November 13, 2024, to March 13, 2025. The internship involved developing and maintaining systems as assigned. The work included developing the frontend and backend of the (System Name) system, comprising (x) features such as...
 
 The system was developed using Angular, Tailwind CSS, and NestJS, with HTML, CSS, TypeScript, and SQL used for implementation. The results showed that the (System Name) system could be developed to meet user requirements and function effectively.
