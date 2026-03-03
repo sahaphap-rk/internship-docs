@@ -1,5 +1,5 @@
 #import "../config/common.typ": *
-
+#set heading(numbering: none)
 = *ประวัติย่อของผู้จัดทำ*
 
 #table(

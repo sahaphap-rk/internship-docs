@@ -1,3 +1,5 @@
+#set heading(numbering: none)
+
 = ภาคผนวก
 
 == ภาคผนวก ก
