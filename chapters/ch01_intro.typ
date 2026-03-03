@@ -75,4 +75,34 @@
 
 การปฏิบัติการสหกิจศึกษาสำหรับภาคเรียนที่ 2 ประจำปีการศึกษา 2568 ระยะเวลานับตั้งแต่ วันที่ 13 พฤศจิกายน พ.ศ. 2568 ถึงวันที่ 13 มีนาคม พ.ศ. 2569 รวมทั้งสิ้นเป็นระยะเวลา 4 เดือน จำนวน 16 สัปดาห์
 
-ตาราง (...)
+#figure(caption: [ระยะเวลาการดำเนินงาน], kind: table, table(
+  columns: (45%, ..(1fr,) * 15),
+  inset: 8pt,
+  align: (left + horizon, center + horizon),
+  stroke: 0.5pt,
+  table.header(
+    table.cell(rowspan: 3)[*ขั้นตอนการดำเนินงาน*],
+    table.cell(colspan: 15)[*ระยะเวลาในการดำเนินงาน*],
+    table.cell(colspan: 15)[ปี พ.ศ. 2567 – พ.ศ. 2568],
+    table.cell(colspan: 3)[พ.ย.],
+    table.cell(colspan: 3)[ธ.ค.],
+    table.cell(colspan: 3)[ม.ค.],
+    table.cell(colspan: 3)[ก.พ.],
+    table.cell(colspan: 3)[มี.ค.],
+  ),
+  // 1. ศึกษา
+  table.cell(inset: (left: 10pt))[1. ศึกษาและเรียนรู้หลักการใช้งาน React และ NodeJS],
+  ..([],) * 2, table.cell(colspan: 1, align: center)[$arrow.l.r$], ..([],) * 12,
+
+  // 2. พัฒนาระบบ Critical
+  table.cell(inset: (left: 10pt))[2. พัฒนาระบบจัดการ Critical Component],
+  ..([],) * 4, table.cell(colspan: 4, align: center)[$arrow.l.r$], ..([],) * 7,
+
+  // 3. พัฒนา Dashboard
+  table.cell(inset: (left: 10pt))[3. พัฒนาระบบ Dashboard Monitor ข้อมูล Market Claim และ RCA Progress],
+  ..([],) * 9, table.cell(colspan: 3, align: center)[$arrow.l.r$], ..([],) * 3,
+
+  // 4. พัฒนาจัดการอุปกรณ์
+  table.cell(inset: (left: 10pt))[4. พัฒนาระบบการจัดการอุปกรณ์ภายใต้ความดูแลของแผนก QA (QA Equipment Inventory)],
+  ..([],) * 12, table.cell(colspan: 3, align: center)[$arrow.l.r$],
+))

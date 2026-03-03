@@ -37,6 +37,15 @@
   },
 )
 
+// การตั้งค่าตาราง (Table Figure)
+#show figure.where(kind: table): set figure(
+  supplement: [ตารางที่],
+  numbering: it => {
+    let ch = counter("chapter").get().first()
+    str(ch) + "-" + str(it)
+  },
+)
+
 // การตั้งค่าหัวข้อ
 #show heading.where(level: 1): it => {
   counter(figure.where(kind: image)).update(0)
@@ -97,6 +106,9 @@
 #pagebreak()
 
 #include "chapters/list-of-figures.typ"
+#pagebreak()
+
+#include "chapters/list-of-tables.typ"
 #pagebreak()
 
 // เนื้อหาหลัก (Main Content) - ใช้เลขหน้าแบบอารบิก (1, 2, 3)
