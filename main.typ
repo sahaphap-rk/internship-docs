@@ -1,5 +1,6 @@
 // ตั้งค่า Font และกระดาษ
 #set text(font: "TH Sarabun New", size: 16pt, lang: "th", style: "normal", weight: "regular")
+#show raw: set text(font: "TH Sarabun New", size: 16pt)
 #set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 3cm, right: 2.5cm))
 
 // สถานะสำหรับชื่อสารบัญในหน้าถัดไป
@@ -45,10 +46,14 @@
     str(ch) + "-" + str(it)
   },
 )
+// ตั้งค่า Caption ของ Table Figure
+#show figure.where(kind: table): set figure.caption(position: top)
+#show figure.caption.where(kind: table): set align(left)
 
 // การตั้งค่าหัวข้อ
 #show heading.where(level: 1): it => {
   counter(figure.where(kind: image)).update(0)
+  counter(figure.where(kind: table)).update(0)
   set align(center)
   set text(size: 18pt, weight: "bold")
   if it.numbering != none {
