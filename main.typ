@@ -14,7 +14,7 @@
 // ตั้งค่าการย่อหน้า (Indentation) และการจัดการพารากราฟ
 #set par(
   first-line-indent: 1cm, // กำหนดระยะย่อหน้า 1 ซม. (ประมาณ 1 Tab)
-  justify: true,
+  justify: false,
   leading: 0.65em, // ระยะห่างระหว่างบรรทัดในพารากราฟ
 )
 
