@@ -6,6 +6,22 @@
 // สถานะสำหรับชื่อสารบัญในหน้าถัดไป
 #let outline-title = state("outline-title", none)
 
+// ฟังก์ชันเลขหน้าแบบอักษรไทย (ก ข ค ...)
+#let thai-letters = (
+  "ก", "ข", "ค", "ง", "จ", "ฉ", "ช"
+)
+
+#let thai-page-number(n) = {
+  let base = thai-letters.len()
+  if n <= 0 { "" }
+  else if n <= base { thai-letters.at(n - 1) }
+  else {
+    let q = calc.floor((n - 1) / base)
+    let r = calc.rem(n - 1, base)
+    thai-page-number(q) + thai-letters.at(r)
+  }
+}
+
 // ฟังก์ชันสำหรับเช็คว่ามีหัวข้อระดับ 1 ในหน้าปัจจุบันหรือไม่
 #let has-level1-heading() = {
   query(heading.where(level: 1)).any(it => it.location().page() == here().page())
@@ -85,19 +101,28 @@
 #include "chapters/cover-en.typ"
 #pagebreak()
 
-// ส่วนหน้า (Front Matter) - ใช้เลขหน้าแบบโรมัน (i, ii, iii)
+// ส่วนหน้า (Front Matter) - ใช้เลขหน้าแบบอักษรไทย (ก, ข, ค, ...)
 #set page(
-  numbering: "i",
+  numbering: thai-page-number,
+  background: none,
+  footer: none,
   header: context {
     let title = outline-title.get()
-    if title != none and not has-level1-heading() {
-      align(center, text(size: 18pt, weight: "bold")[#title (ต่อ)])
-    }
+    grid(
+      columns: (1fr, auto, 1fr),
+      [],
+      if title != none and not has-level1-heading() {
+        align(center, text(size: 18pt, weight: "bold")[#title (ต่อ)])
+      } else { [] },
+      align(right, counter(page).display()),
+    )
   },
 )
-#counter(page).update(1)
-
-#include "chapters/certificate.typ"
+#{
+  set page(numbering: none, header: none, footer: none)
+  include "chapters/certificate.typ"
+  counter(page).update(1)
+}
 #pagebreak()
 #include "chapters/ack.typ"
 #pagebreak()
@@ -117,7 +142,11 @@
 #pagebreak()
 
 // เนื้อหาหลัก (Main Content) - ใช้เลขหน้าแบบอารบิก (1, 2, 3)
-#set page(numbering: "1", header: none)
+#set page(
+  numbering: "1",
+  footer: none,
+  header: context align(right, counter(page).display()),
+)
 #counter(page).update(1)
 
 #set heading(numbering: "1.1")

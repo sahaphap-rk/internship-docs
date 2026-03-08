@@ -1,10 +1,10 @@
-#import "/config/common.typ": *
+#import "../config/common.typ": *
 
 #set page(numbering: none)
 #set align(center)
 
 #v(1fr)
-#image("/images/buu-logo-inter.webp", width: 20%)
+#image("../images/buu-logo-inter.webp", width: 20%)
 
 #let t(weight: "bold", body) = text(size: 18pt, weight: weight, body)
 
