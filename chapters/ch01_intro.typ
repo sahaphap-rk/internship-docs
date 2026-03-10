@@ -1,4 +1,4 @@
-#import "/config/common.typ": *
+#import "../config/common.typ": *
 = บทนำ
 
 == ที่มาของการปฏิบัติงานสหกิจศึกษา
@@ -83,7 +83,7 @@
 #table(
   columns: (auto, 1fr),
   stroke: none,
-  [ชื่อ–นามสกุล], [: นางสาวปัญญาพร สุขเกลอ],
+  [ชื่อ–นามสกุล], [: นางสาวปัญญาพร ดีตลอด],
   [ตำแหน่ง], [: HR Specialist],
   [อีเมล], [: panyaporn.hr\@myorder.ai],
 )
@@ -119,10 +119,10 @@
   table.cell(inset: (left: 10pt))[3. รวบรวมความต้องการของ Stakeholder และออกแบบระบบ],
   ..([],) * 4, table.cell(colspan: 4, align: center)[#fill-arrow], ..([],) * 12,
 
-  table.cell(inset: (left: 10pt))[4. ออกแบบระบบและพัฒนาฟีเจอร์อื่น ๆ],
+  table.cell(inset: (left: 10pt))[4. ออกแบบระบบและพัฒนาโมดูลอื่น ๆ],
   ..([],) * 4, table.cell(colspan: 12, align: center)[#fill-arrow], ..([],) * 4,
 
-  table.cell(inset: (left: 10pt))[5. พัฒนาฟีเจอร์การจัดการแบบประเมินผลการเรียนรู้จากการเรียนหลักสูตร (Assignment Management)],
+  table.cell(inset: (left: 10pt))[5. พัฒนาโมดูล Enrollment Management และโมดูล การ)],
   ..([],) * 12, table.cell(colspan: 4, align: center)[#fill-arrow], ..([],) * 4,
 
   table.cell(inset: (left: 10pt))[6. ตรวจสอบความถูกต้องของระบบและทำเอกสารประกอบการปฏิบัติงาน],
