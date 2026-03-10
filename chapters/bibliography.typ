@@ -27,8 +27,12 @@ Miro. (2024). _Miro_ [Computer software]. https://miro.com/
 
 Myśliwiec, K. (2024). _NestJS_ [Computer software]. https://nestjs.com/
 
+Redis Ltd. (2024). _Redis_ [Computer software]. https://redis.io/
+
 Slack Technologies, LLC. (2024). _Slack_ [Computer software]. https://slack.com/
 
 Tailwind Labs. (2024). _Tailwind CSS_ [Computer software]. https://tailwindcss.com/
+
+Twilio Inc. (2024). _SendGrid_ [Computer software]. https://sendgrid.com/
 
 Vitest Team. (2024). _Vitest_ [Computer software]. https://vitest.dev/
