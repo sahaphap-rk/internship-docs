@@ -27,6 +27,8 @@ Miro. (2024). _Miro_ [Computer software]. https://miro.com/
 
 Myśliwiec, K. (2024). _NestJS_ [Computer software]. https://nestjs.com/
 
+GeeksforGeeks. (2025, December 9). _Software Development Life Cycle (SDLC)_. https://www.geeksforgeeks.org/software-engineering/software-development-life-cycle-sdlc/
+
 Redis Ltd. (2024). _Redis_ [Computer software]. https://redis.io/
 
 Slack Technologies, LLC. (2024). _Slack_ [Computer software]. https://slack.com/
