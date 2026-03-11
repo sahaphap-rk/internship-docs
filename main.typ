@@ -118,7 +118,7 @@
 #set enum(indent: 1em)
 #show list: set par(first-line-indent: 0pt)
 #show enum: set par(first-line-indent: 0pt)
-#show table: set par(first-line-indent: 0pt)
+#show table: set par(first-line-indent: 0pt, justify: false)
 
 // หน้าปก
 #include "chapters/cover-th.typ"
