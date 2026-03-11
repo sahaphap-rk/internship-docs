@@ -14,11 +14,11 @@
 
 = บทคัดย่อ
 
-รายงานการปฏิบัติงานสหกิจศึกษาฉบับนี้ได้อธิบายถึงการปฏิบัติงาน ณ #company_name ระหว่างวันที่ 13 พฤศจิกายน 2567 ถึงวันที่ 13 มีนาคม 2568 โดยปฏิบัติงานเกี่ยวกับการพัฒนาและแก้ไขระบบตามที่ได้รับมอบหมาย ซึ่งได้จัดทำการพัฒนาส่วนติดต่อผู้ใช้งานและส่วนหลังบ้านของระบบ (ชื่อระบบ) โดยแบ่งเป็นทั้งหมด (x) ฟีเจอร์ ได้แก่ …
+รายงานการปฏิบัติงานสหกิจศึกษาฉบับนี้นำเสนอผลการปฏิบัติงาน ณ #company_name ระหว่างวันที่ 13 พฤศจิกายน 2567 ถึงวันที่ 13 มีนาคม 2568 โดยมุ่งพัฒนาระบบบริหารจัดการการเรียนรู้ออนไลน์ MyAcademy สำหรับใช้ภายในองค์กร เพื่อสนับสนุนการจัดการหลักสูตร การลงทะเบียนเรียน และการติดตามผลการเรียนรู้ของพนักงาน ผู้จัดทำปฏิบัติงานในตำแหน่ง Full Stack Developer มีหน้าที่ศึกษาโครงสร้างระบบเดิมของ MyHR วิเคราะห์ความต้องการของผู้ใช้งาน และพัฒนาฟังก์ชันให้สอดคล้องกับกระบวนการทำงานขององค์กร
 
-โดย Framework ที่ใช้ในการพัฒนาระบบได้แก่ Angular, Tailwind CSS และ NestJS
-โดยใช้ภาษา HTML, CSS, TypeScript และ SQL ในการพัฒนาระบบ
-ผลลัพธ์จากการพัฒนาระบบ (ระบบ) พบว่าสามารถพัฒนาเว็บไซต์ตรงตามความต้องการของผู้ใช้และสามารถใช้งานได้อย่างมีประสิทธิภาพ
+ขอบเขตงานที่รับผิดชอบครอบคลุมการพัฒนาทั้งส่วน Frontend และ Backend ของ Enrollment Management Module และ Reporting Module โดยพนักงานสามารถเลือกหลักสูตรและส่งคำขอลงทะเบียนเรียนได้ ขณะที่ฝ่ายทรัพยากรบุคคลสามารถพิจารณาอนุมัติหรือปฏิเสธคำขอ มอบหมายหลักสูตรให้พนักงาน รวมทั้งส่งออกรายงานผลการเรียนรู้ในรูปแบบ CSV และดาวน์โหลดประกาศนียบัตรได้อย่างเป็นระบบ นอกจากนี้ ระบบยังรองรับงานประมวลผลเบื้องหลังด้วย Redis และ BullMQ เพื่อลดความล่าช้าในการสร้างไฟล์รายงานและเพิ่มประสิทธิภาพการให้บริการ
+
+ผลการดำเนินงานพบว่าระบบที่พัฒนาขึ้นสามารถทำงานได้ตามข้อกำหนดที่กำหนดไว้ ช่วยให้กระบวนการลงทะเบียนเรียน การอนุมัติคำขอ และการสรุปรายงานมีความถูกต้อง รวดเร็ว และตรวจสอบย้อนหลังได้มากขึ้น ส่งผลให้องค์กรสามารถบริหารจัดการการฝึกอบรมพนักงานได้อย่างเป็นระบบ และลดภาระงานที่ต้องดำเนินการด้วยตนเองของฝ่ายทรัพยากรบุคคล
 
 #pagebreak()
 #table(
@@ -35,6 +35,8 @@
 
 = ABSTRACT
 
-This report describes the internship at #company_name_en from November 13, 2024, to March 13, 2025. The internship involved developing and maintaining systems as assigned. The work included developing the frontend and backend of the (System Name) system, comprising (x) features such as...
+This report presents the cooperative education internship at #company_name_en from November 13, 2024, to March 13, 2025, focusing on the development of MyAcademy, an internal e-learning management system for employee training. Working as a Full Stack Developer, the student intern studied the existing MyHR architecture, analyzed business requirements, and implemented features that aligned with the organization's learning workflow.
 
-The system was developed using Angular, Tailwind CSS, and NestJS, with HTML, CSS, TypeScript, and SQL used for implementation. The results showed that the (System Name) system could be developed to meet user requirements and function effectively.
+The work covered both frontend and backend development of the Enrollment Management Module and the Reporting Module. Employees can browse courses and submit enrollment requests, while HR staff can approve or reject requests, assign courses, export course reports in CSV format, and download certificates systematically. The system was developed using Angular, Tailwind CSS, NestJS, PostgreSQL, and Redis/BullMQ to support background processing and improve responsiveness during report generation.
+
+The results showed that the developed system satisfied the specified requirements and improved the efficiency of training management. The implemented functions increased the accuracy and traceability of enrollment, approval, and reporting processes, while reducing manual workload for HR staff.
