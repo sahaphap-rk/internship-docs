@@ -12,6 +12,8 @@ Apple Inc. (2024). _HTTP Live Streaming_ [Computer software]. https://developer.
 
 Beck, K. (1999). _Extreme Programming Explained: Embrace Change_. Addison-Wesley.
 
+Beck, K. (2002). _Test-Driven Development: By Example_. Addison-Wesley.
+
 Beck, K., Beedle, M., van Bennekum, A., Cockburn, A., Cunningham, W., Fowler, M., Grenning, J., Highsmith, J., Hunt, A., Jeffries, R., Kern, J., Marick, B., Martin, R. C., Mellor, S., Schwaber, K., Sutherland, J., & Thomas, D. (2001). _Manifesto for Agile Software Development_. http://agilemanifesto.org/
 
 Byars, B. (2024). _Mountebank_ [Computer software]. http://www.mbtest.org/

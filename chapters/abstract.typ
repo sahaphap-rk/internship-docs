@@ -3,13 +3,13 @@
 #table(
   columns: (auto, 1fr),
   stroke: none,
-  [หัวข้อรายงาน], [#project_name_th],
-  [นิสิต], [นาย #student_name_th],
-  [รหัสประจำตัว], [#student_id],
-  [อาจารย์ที่ปรึกษา], [ผู้ช่วยศาสตราจารย์ เบญจภรณ์ จันทรกองกุล],
-  [ระดับการศึกษา], [วิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์],
-  [คณะ], [วิทยาการสารสนเทศ มหาวิทยาลัยบูรพา],
-  [ปีการศึกษา], [2568],
+  [*หัวข้อรายงาน*], [#project_name_th],
+  [*นิสิต*], [นาย #student_name_th],
+  [*รหัสประจำตัว*], [#student_id],
+  [*อาจารย์ที่ปรึกษา*], [ผู้ช่วยศาสตราจารย์ เบญจภรณ์ จันทรกองกุล],
+  [*ระดับการศึกษา*], [วิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์],
+  [*คณะ*], [วิทยาการสารสนเทศ มหาวิทยาลัยบูรพา],
+  [*ปีการศึกษา*], [2568],
 )
 
 = บทคัดย่อ
@@ -24,13 +24,13 @@
 #table(
   columns: (auto, 1fr),
   stroke: none,
-  [Report Title], [#project_name_en],
-  [Student], [#student_name_en],
-  [Student ID], [#student_id],
-  [Advisor], [Assistant Professor Benchaporn Jantarakongkul],
-  [Level of Study], [Bachelor degree of Science in Computer Science],
-  [Faculty], [Faculty of Informatics, Burapha University],
-  [Year], [2025],
+  [*Report Title*], [#project_name_en],
+  [*Student*], [#student_name_en],
+  [*Student ID*], [#student_id],
+  [*Advisor*], [Assistant Professor Benchaporn Jantarakongkul],
+  [*Level of Study*], [Bachelor degree of Science in Computer Science],
+  [*Faculty*], [Faculty of Informatics, Burapha University],
+  [*Year*], [2025],
 )
 
 = ABSTRACT

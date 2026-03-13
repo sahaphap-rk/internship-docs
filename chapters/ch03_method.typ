@@ -17,7 +17,7 @@
 #let figure_image(path, caption, fig_label: none, width: 100%, height: none) = [
 	#v(6pt)
 	#figure(
-		block(stroke: 0.5pt, inset: 0pt)[
+		block(stroke: 1pt, inset: 0pt)[
 			#if height == none {
 				image(path, width: width, fit: "contain")
 			} else {

@@ -16,7 +16,7 @@
 #let figure_image(path, caption, fig_label: none, width: 100%, height: none) = [
 	#v(6pt)
 	#figure(
-		block(stroke: 0.5pt, inset: 0pt)[
+		block(stroke: 1pt, inset: 0pt)[
 			#if height == none {
 				image(path, width: width, fit: "contain")
 			} else {
@@ -184,7 +184,7 @@ Enrollment Management Module เป็นโมดูลที่ช่วยใ
 	"../images/ch4/enrollment_assignment_ui_select_course.png",
 	[หน้าต่างเลือกหลักสูตรสำหรับมอบหมายให้พนักงานที่เลือก],
 	fig_label: "fig-ch4-assignment-select-course",
-	height: 100mm,
+	height: 95mm,
 )
 
 จากรูป @fig-ch4-assignment-select-course เมื่อ HR เลือกพนักงานเรียบร้อยแล้วและกดปุ่มมอบหมายหลักสูตร ระบบจะแสดง dialog สำหรับเลือกหลักสูตรที่ต้องการมอบหมาย โดยผู้ใช้สามารถค้นหาหลักสูตรจากรายการที่พร้อมใช้งาน และเลือกหลักสูตรที่เหมาะสมก่อนยืนยันการมอบหมาย

@@ -55,14 +55,15 @@
   }
 }
 #set par(
-  first-line-indent: 1cm, // กำหนดระยะย่อหน้า 1 ซม. (ประมาณ 1 Tab)
+  first-line-indent: 1cm,
   justify: true,
-  leading: 0.65em, // ระยะห่างระหว่างบรรทัดในพารากราฟ
+  leading: 0.65em,
+  linebreaks: "optimized",
 )
 
 // บังคับให้พารากราฟที่ไม่พอในหน้าเดียวขยับไปหน้าใหม่ (Keep together)
 // หมายเหตุ: หากพารากราฟยาวมากเกินกว่าหนึ่งหน้า จะทำให้เกิดปัญหากระดาษว่าง
-#show par: set block(breakable: false)
+#show par: set block(breakable: true)
 
 // บังคับให้ย่อหน้าในพารากราฟแรกหลังหัวข้อด้วย — ลดช่องว่างแนวตั้งลง
 #show heading: it => {
@@ -89,6 +90,8 @@
     str(ch) + "-" + str(it)
   },
 )
+// กำหนด caption เองเพื่อไม่ให้ Typst แทรก ":" และให้คั่นด้วยช่องว่างปกติ 1 ช่อง
+#show figure.caption: it => context [#it.supplement #it.counter.display(it.numbering) #it.body]
 // ตั้งค่า Caption ของ Table Figure
 #show figure.where(kind: table): set figure.caption(position: top)
 #show figure.caption.where(kind: table): set align(left)
@@ -126,7 +129,7 @@
 #pagebreak()
 
 // ตั้งค่าขอบภาพ (Image Border) - เริ่มใช้หลังจากหน้าปก
-#show image: it => rect(it, stroke: 0.5pt + black, inset: 0pt)
+#show image: it => rect(it, stroke: 1pt + black, inset: 0pt)
 
 // ฟังก์ชันสำหรับเลขหน้าแบบ ก, ข, ค
 #let thai-alphabetic(n) = {
@@ -221,7 +224,7 @@
 #pagebreak()
 
 // สารบัญ
-#create-outline("สารบัญ", heading, [หัวข้อ])
+#create-outline("สารบัญ", heading, [])
 #pagebreak()
 
 // สารบัญภาพ
