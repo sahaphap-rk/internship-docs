@@ -1,16 +1,15 @@
 #set heading(numbering: none)
 
+#v(30%)
 = ภาคผนวก
-
-แผนการดำเนินงานตามเอกสาร IN-S006 (เซ็นชื่อแล้วจะใส่ไปให้ครับ)
-
+#pagebreak()
 
 #figure(
-  image("../images/docs/s006.pdf", page: 1, width: 100%),
-  caption: [แผนการดำเนินงานตามเอกสาร IN-S006 (หน้า 1)],
+  image("../images/docs/s006.pdf", page: 1, width: 80%),
+  caption: [แผนการดำเนินงานตามเอกสาร IN-S006],
 )
 
 #figure(
-  image("../images/docs/s006.pdf", page: 2, width: 100%),
-  caption: [แผนการดำเนินงานตามเอกสาร IN-S006 (หน้า 2)],
+  image("../images/docs/s006.pdf", page: 2, width: 80%),
+  caption: [แผนการดำเนินงานตามเอกสาร IN-S006 (ต่อ)],
 )

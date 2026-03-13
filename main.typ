@@ -258,8 +258,37 @@
 
 // ส่วนหลัง (Back Matter)
 #set page(margin: (top: 4.5cm, bottom: 2.5cm, left: 3cm, right: 2.5cm), header: shared-header)
+#let appendix-header = context {
+  let page-headings = query(heading.where(level: 1)).filter(it => it.location().page() == here().page())
+
+  if page-headings.len() == 0 {
+    v(1.5cm)
+    let num = page.numbering
+    let is-first-appendix-content-page = query(heading.where(level: 1)).any(
+      it => it.location().page() == here().page() - 1,
+    )
+
+    if num != none {
+      let page-num = [#counter(page).display(num)]
+
+      if is-first-appendix-content-page {
+        grid(
+          columns: (1fr, 9.5cm, 1fr),
+          [],
+          align(center, text(size: 18pt, weight: "bold")[ภาคผนวก ก \ แผนการดำเนินงานตามเอกสาร IN-S006]),
+          align(right, page-num),
+        )
+      } else {
+        align(right, page-num)
+      }
+    }
+  }
+}
+
 #include "chapters/bibliography.typ"
 #pagebreak()
+#set page(header: appendix-header)
 #include "chapters/appendix.typ"
 #pagebreak()
+#set page(header: shared-header)
 #include "chapters/biography.typ"
