@@ -1,4 +1,3 @@
-#state("header-title", none).update("บรรณานุกรม")
 #set heading(numbering: none)
 // ขยับหัวข้อแรกขึ้นไปชดเชยกับ Margin ที่เพิ่มมา (4.5cm - 2cm = 2.5cm)
 #v(-2cm)
@@ -119,5 +118,3 @@ Vitest Team. (2024). _Vitest_ [Computer software]. https://vitest.dev/
 Warit W. (2024). _เพราะบริการที่ดีไม่ใช่เรื่องบังเอิญ! Service Blueprint เครื่องมือช่วยธุรกิจ สร้างเซอร์วิสโดนใจ_. Skooldio Blog. https://blog.skooldio.com/service-blueprint/
 
 Wing, J. M. (2006). _Computational Thinking_. Communications of the ACM, 49(3), 33-35.
-
-#state("header-title", none).update(none)
