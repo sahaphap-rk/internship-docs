@@ -133,7 +133,7 @@
   table.cell(inset: (left: 10pt))[4. ออกแบบระบบและพัฒนาโมดูลอื่น ๆ],
   ..([],) * 4, table.cell(colspan: 12, align: center)[#fill-arrow], ..([],) * 4,
 
-  table.cell(inset: (left: 10pt))[5. พัฒนาโมดูล Enrollment Management และโมดูล การ)],
+  table.cell(inset: (left: 10pt))[5. พัฒนาระบบ MyAcademy ในส่วนของ โมดูล Enrollment และ โมดูล Reporting],
   ..([],) * 12, table.cell(colspan: 4, align: center)[#fill-arrow], ..([],) * 4,
 
   table.cell(inset: (left: 10pt))[6. ตรวจสอบความถูกต้องของระบบและทำเอกสารประกอบการปฏิบัติงาน],

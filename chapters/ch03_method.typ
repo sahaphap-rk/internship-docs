@@ -175,7 +175,9 @@ Blueprint (Scenario to Implementation)
 #figure(
   table(
     columns: (auto, 1fr, 2fr),
-    inset: 7pt,
+    stroke: 0.5pt,
+		inset: 6pt,
+		align: (left, left, left),
     [*Method*], [*Endpoint*], [*Description*],
     [`GET`], [`/courses/public`], [ดึงข้อมูลหลักสูตรที่เปิดให้ลงทะเบียนและสถานะของพนักงาน],
     [`GET`], [`/courses/:id`], [ดึงรายละเอียดหลักสูตรเชิงลึก],
@@ -221,7 +223,9 @@ Blueprint (Scenario to Implementation)
 #figure(
   table(
     columns: (auto, 1fr, 2fr),
-    inset: 7pt,
+    stroke: 0.5pt,
+		inset: 6pt,
+		align: (left, left, left),
     [*Method*], [*Endpoint*], [*Description*],
     [`GET`], [`enrollments`], [ดึงรายการคำขอลงทะเบียน (แสดงข้อมูล Employee, Position และ Enrollment)],
 		[`PATCH`], [`enrollments/:id/approve`], [อนุมัติคำขอลงทะเบียนและเปลี่ยนสถานะเป็น `APPROVED`],
@@ -269,7 +273,9 @@ Blueprint (Scenario to Implementation)
 #figure(
 	table(
 		columns: (auto, 1fr, 2fr),
-		inset: 7pt,
+		stroke: 0.5pt,
+		inset: 6pt,
+		align: (left, left, left),
 		[*Method*], [*Endpoint*], [*Description*],
 		[`GET`], [`employees/active`], [ดึงรายชื่อพนักงานที่ Active แบบ Pagination พร้อมรองรับ query เช่น `page`, `limit`, `search` และ `position`],
 		[`GET`], [`courses/published`], [ดึงหลักสูตรที่ Published แบบ Pagination และรองรับ `employeeId` เพื่อคัดกรองเฉพาะหลักสูตรที่พนักงานยังไม่เคยลงทะเบียน],
@@ -389,7 +395,9 @@ Blueprint (Scenario to Implementation)
 #figure(
 	table(
 		columns: (auto, 2.2fr, 2.2fr),
-		inset: 7pt,
+		stroke: 0.5pt,
+		inset: 6pt,
+		align: (left, left, left),
 		[*Method*], [*Endpoint*], [*Description*],
 		[`GET`], [`courses/admin/courses-reports`], [ดึงรายการ Course Report (หน้ารายการหลักสูตรสำหรับรายงาน)],
 		[`GET`], [`courses/admin/courses-reports/:courseId`], [ดึงรายละเอียด Course Report ของหลักสูตรที่เลือก],
@@ -402,7 +410,9 @@ Blueprint (Scenario to Implementation)
 #figure(
 	table(
 		columns: (auto, 2.2fr, 2.2fr),
-		inset: 7pt,
+		stroke: 0.5pt,
+		inset: 6pt,
+		align: (left, left, left),
 		[*Method*], [*Endpoint*], [*Description*],
 		[`POST`], [`certificates/admin/courses-reports/request-download-zip`], [เริ่มต้นงานดาวน์โหลด Certificate หลายรายการเป็น ZIP (ส่ง `enrollmentIds` ใน body) และคืน `jobId`],
 		[`GET`], [`certificates/admin/courses-reports/download-status/:jobId`], [ตรวจสอบสถานะ job (waiting/active/completed/failed) และ progress (UI ใช้ polling เพื่อติดตาม)],
