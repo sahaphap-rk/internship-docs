@@ -143,7 +143,7 @@
           [ความเป็นมาและขอบเขตงาน],
           [สถาปัตยกรรมและเทคโนโลยีที่ใช้],
           [ผลงานหลักของ Enrollment Management Module],
-          [ผลงานหลักของ Reporting Module],
+          [ผลงานหลักของ Course Reporting Module],
           [ผลลัพธ์ที่ได้รับและบทเรียนจากการฝึกงาน],
         ))
       ], fill: rgb("#fff7ef"))
@@ -188,7 +188,7 @@
           stat-card([2 กลุ่ม], [ผู้ใช้งานหลักของระบบ]),
           stat-card([4 เดือน], [ระยะเวลาปฏิบัติงาน]),
           stat-card([17 สัปดาห์], [ช่วงเวลาพัฒนาและส่งมอบ]),
-          stat-card([2 โมดูลหลัก], [Enrollment และ Reporting]),
+          stat-card([2 โมดูลหลัก], [Enrollment และ Course Reporting]),
         )
         #v(0.35cm)
         #bullet-list((
@@ -219,7 +219,7 @@
       ])
     ],
     [
-      #panel([Reporting Module], [
+      #panel([Course Reporting Module], [
         #bullet-list((
           [ดาวน์โหลดรายงานหลักสูตรในรูปแบบ CSV],
           [ดาวน์โหลดประกาศนียบัตรหลายรายการเป็นไฟล์ ZIP],
@@ -383,7 +383,7 @@
 )
 
 #section-slide(
-  [ผลงานหลัก: Reporting Module],
+  [ผลงานหลัก: Course Reporting Module],
   subtitle: [ส่งออกรายงาน CSV และดาวน์โหลด Certificate แบบ background job],
   body: [
   #grid(

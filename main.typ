@@ -55,7 +55,7 @@
   }
 }
 #set par(
-  first-line-indent: 1cm,
+  first-line-indent: (amount: 1cm, all: true),
   justify: true,
   leading: 0.65em,
   linebreaks: "optimized",
