@@ -45,9 +45,9 @@
 #pagebreak()
 === สถานที่ตั้ง #company_name
 
-#company_name ตั้งอยู่ที่ 211 2 ตำบล บางพระ อำเภอศรีราชา ชลบุรี 20110 และเว็บไซต์ https://landing.myorder.ai
+#company_name ตั้งอยู่ที่ 211 2 ตำบล บางพระ อำเภอศรีราชา ชลบุรี 20110 และมีเว็บไซต์อย่างเป็นทางการที่ https://landing.myorder.ai โดยตำแหน่งที่ตั้งของบริษัทดังแสดงในรูป@fig-ch1-company-location
 
-#toolFigure("../images/ch1/myorder_map.png", "map showing MyOrder Headoffice Chonburi", "แผนที่แสดงที่ตั้งของบริษัท MyOrder Headoffice Chonburi", w: 14cm)
+#toolFigure("../images/ch1/myorder_map.png", "map showing MyOrder Headoffice Chonburi", "แผนที่แสดงที่ตั้งของบริษัท MyOrder Headoffice Chonburi", w: 14cm) <fig-ch1-company-location>
 
 
 
