@@ -92,6 +92,7 @@
 )
 // กำหนด caption เองเพื่อไม่ให้ Typst แทรก ":" และให้คั่นด้วยช่องว่างปกติ 1 ช่อง
 #show figure.caption: it => context [#it.supplement #it.counter.display(it.numbering) #it.body]
+#show figure.caption: set par(first-line-indent: 0pt)
 // ตั้งค่า Caption ของ Table Figure
 #show figure.where(kind: table): set figure.caption(position: top)
 #show figure.caption.where(kind: table): set align(left)
